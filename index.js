@@ -268,6 +268,6 @@ Thermostat.prototype = {
     this.service.getCharacteristic(Characteristic.CurrentTemperature).setProps({ minValue: this.minTemp, maxValue: this.maxTemp, minStep: 1 });
     this.service.getCharacteristic(Characteristic.TargetTemperature).setProps({ minValue: this.minTemp, maxValue: this.maxTemp, minStep: 1 });
 
-    return [informationService, this.service, this.humidityService];
+    return [informationService, this.service];
   }
 };
