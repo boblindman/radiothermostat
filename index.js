@@ -4,7 +4,7 @@ var request = require('request');
 module.exports = function(homebridge){
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
-  homebridge.registerAccessory('homebridge-radiothermostat', 'RadioThermostat', Thermostat);
+  homebridge.registerAccessory('homebridge-radiothermostat-bob', 'RadioThermostat', Thermostat);
 };
 
 function fahrenheitToCelsius(temp) {
